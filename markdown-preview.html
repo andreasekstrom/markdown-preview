@@ -1,0 +1,19 @@
+<head>
+  <title>markdown-preview</title>
+</head>
+
+<body>
+  {{> main}}
+</body>
+
+
+<template name="main">
+  <textarea id="editor"></textarea>
+  <div id="preview-pane">{{> preview}}</div>
+</template>
+
+<template name="preview">
+  <div>
+  {{#markdown}}{{{markdown_data}}}{{/markdown}}
+  </div>
+</template>
