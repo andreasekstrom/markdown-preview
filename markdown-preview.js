@@ -17,7 +17,7 @@ if (Meteor.isClient) {
   };
 
   Template.main.events({
-    'keydown #editor': function (event) {
+    'keyup #editor': function (event) {
       var value = $(event.target).val();
       Session.set("markdown_data", value);
     }
