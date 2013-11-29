@@ -1,0 +1,15 @@
+/* CSS declarations go here */
+
+#editor-pane, #preview-pane {
+  float: left;
+  width: 50%;
+}
+
+#editor-pane textarea {
+  min-width: 400px;
+  min-height: 400px;
+}
+
+#preview-pane {
+  background-color: lightgrey;
+}
