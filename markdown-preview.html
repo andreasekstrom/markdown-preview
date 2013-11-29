@@ -3,17 +3,22 @@
 </head>
 
 <body>
+  <h1>Markdown showcase</h1>
+  <p>This is a quick hack to show benefits of Markdown (and incidently benefits of using Meteor...)</p>
+  <p>Read the blog post for how I made this, or paste any markdown in the editor, and use it as a simple Markdown-editor and preview. Browser refresh will get back the original post!</p>
+
   {{> main}}
 </body>
 
 
 <template name="main">
-  <textarea id="editor"></textarea>
+  <div id="editor-pane"><textarea id="editor" >{{markdown_editor_data}}</textarea></div>
+
   <div id="preview-pane">{{> preview}}</div>
 </template>
 
 <template name="preview">
   <div>
-  {{#markdown}}{{{markdown_data}}}{{/markdown}}
+    {{#markdown}}{{{markdown_data}}}{{/markdown}}
   </div>
 </template>
