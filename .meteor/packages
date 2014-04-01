@@ -6,6 +6,6 @@
 standard-app-packages
 autopublish
 insecure
-preserve-inputs
-showdown
 http
+
+marked
